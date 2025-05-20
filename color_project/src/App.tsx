@@ -78,7 +78,7 @@ function App() {
       <h1>🎨 Color Harmony Viewer</h1>
 
       <div className="color-picker">
-        <label htmlFor="colorInput">Select Color: </label>
+        <label htmlFor="colorInput" className="select">Select Color: </label>
         <input
           type="color"
           id="colorInput"
