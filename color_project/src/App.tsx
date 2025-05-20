@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function hexToHSL(hex: string): [number, number, number] {
@@ -62,6 +62,9 @@ function getDiad(hex: string): string[] {
 }
 
 function App() {
+  useEffect(() => {
+    document.title = "Color Harmony Viewer";
+  }, []);
   const [color, setColor] = useState('#3366cc');
   const triads = getTriad(color);
   const diads = getDiad(color);
@@ -91,7 +94,7 @@ function App() {
       <div className="section">
         <h2>ダイアード</h2>
         <div className="color-grid single">
-          {renderBox(diads[0], 'Diad')}
+          {renderBox(diads[0], 'Dyad')}
         </div>
       </div>
 

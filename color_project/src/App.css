@@ -92,7 +92,7 @@ h1 {
 }
 
 .color-box:hover {
-  transform: rotate(5deg) scale(1.05);
+  transform: rotate(90deg) scale(1.05);
 }
 
 .color-label {
